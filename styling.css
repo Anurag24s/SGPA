@@ -13,6 +13,7 @@ body {
     margin: 0px;
     font-size: 20px;
     text-align: center; 
+    z-index: 1000;
 }
 .header img {
     margin-right: 0;
@@ -59,6 +60,7 @@ body {
     padding: 2px;
     margin: 1px;
     background-color: bisque;
+    z-index: 999;
 }
 .nav h1:hover a {
     color: #350af3;
@@ -256,12 +258,37 @@ body {
 @media only screen and (min-width: 601px) {
     .containerofcalctask,
     .secondmain {
-        width: 600px; /* Set a fixed width for larger screens */
+        width: 500px; /* Set a fixed width for larger screens */
         margin-left: auto; /* Center the container horizontally */
         margin-right: auto; /* Center the container horizontally */
     }
+    .header{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        background-color: rgb(22, 21, 21);
+        color: white;
+        padding: 10px;
+        margin: 0px;
+        font-size: 20px;
+        text-align: center; 
+    }
+    .header img {
+        margin-right: 0;
+        margin-bottom: 10px;
+        max-width: 100%; /* Make the image responsive */
+    }
+    
+    #headerfont {
+        font-size: 45px;
+        margin-left: 70px;
+    }
 }
 @media only screen and (max-width: 600px) {
+    #minsizevideo{
+        width: 450px;
+    }
     .header {
         /* flex-direction: column;
         text-align: center; */
