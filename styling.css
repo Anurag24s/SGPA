@@ -254,6 +254,7 @@ body {
     body {
         font-size: 14px;
     }
+
 }
 @media only screen and (min-width: 601px) {
     .containerofcalctask,
@@ -335,10 +336,8 @@ body {
 
     .containerofcalctask,
     .secondmain {
-        /* margin: auto;
-        width: auto; */
-        margin: 10px auto; /*Center the containers horizontally */
-        max-width: 600px; /*Limit the maximum width of the containers*/
+        margin: 10px auto; /* Center the containers horizontally */
+        max-width: 90%; /* Adjust the maximum width of the containers */
     }
 
     #main,
